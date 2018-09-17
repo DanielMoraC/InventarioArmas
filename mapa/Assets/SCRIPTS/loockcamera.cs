@@ -13,9 +13,11 @@ public class loockcamera : MonoBehaviour {
 
     private void Awake()
     {
+        
         LockCursor(); //bloquear cursor en el centro de la pantalla
         xAxisClamp = 0.0f;
     }
+
 
     //bloquear cursor en el centro de la pantalla
 
@@ -24,10 +26,26 @@ public class loockcamera : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    //desbloquear el cursor
+
+    private void DontLockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     private void Update()
     {
         CameraRotation();
+        if (Input.GetKey(KeyCode.C))
+        {
+            DontLockCursor();
+        }
+        else
+        {
+            LockCursor();
+        }
     }
+    
 
     private void CameraRotation()
     {
