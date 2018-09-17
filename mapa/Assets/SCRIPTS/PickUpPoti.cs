@@ -45,7 +45,7 @@ public class PickUpPoti : MonoBehaviour {
                 if (item)
                 {
                     cont.text = stack.ToString();
-                    cont.transform.SetParent(invScript.potivt.transform);
+                    cont.transform.SetParent(invScript.potivpivote.transform);
                     stack++;
                 }
 

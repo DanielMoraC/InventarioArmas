@@ -33,7 +33,7 @@ public class PickUp : MonoBehaviour
                 if (item)
                 {
                     GameObject i = Instantiate(itemIcon);
-                    i.transform.SetParent(invScript.invTab.transform);
+                    i.transform.SetParent(invScript.invItems.transform);
                     //Destroy(gameObject);
                     maximo++;
                 }

@@ -5,12 +5,13 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
 
-    public GameObject invTab;
+    public GameObject invItems;
     public GameObject invmenu;
+    public GameObject invequ;
     public GameObject potiv;
-    public GameObject potivt;
+    public GameObject potivpivote;
     public GameObject potim;
-    public GameObject potimt;
+    public GameObject potimpivote;
 
     public bool a = false;
 
@@ -34,6 +35,10 @@ public class Inventory : MonoBehaviour
             //Time.timeScale = 1;
         }
 
+    }
+    public void Say()
+    {
+        Debug.Log("hola");
     }
 
     
