@@ -23,7 +23,7 @@ public class SelecciondeStats : MonoBehaviour {
 
         for (i = 0; i < Guantes.Length; i++)
         {
-            Debug.Log("Item Number " + i + " is named " + Guantes[i].name);
+            //Debug.Log("Item Number " + i + " is named " + Guantes[i].name);
         }
     }
 	

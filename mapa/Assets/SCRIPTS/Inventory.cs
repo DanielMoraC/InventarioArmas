@@ -15,6 +15,7 @@ public class Inventory : MonoBehaviour
 
     public bool a = false;
 
+
     // Use this for initialization
     void Start()
     {
@@ -24,7 +25,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.C))
+        if (Input.GetKey(KeyCode.Tab))
         {
             invmenu.SetActive(true);
             //Time.timeScale = 0;
@@ -34,6 +35,10 @@ public class Inventory : MonoBehaviour
             invmenu.SetActive(false);
             //Time.timeScale = 1;
         }
+
+        //Debug.Log(invequ.GetComponentsInChildren<PropertyName>);
+        //Debug.Log("Objeto equipado nombre: " + invequ.GetComponentInChildren<>); transform.FindChild("nameOfChildObject")
+        Debug.Log(invequ = GetComponentInChildren<name>();
 
     }
     

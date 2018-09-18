@@ -36,7 +36,7 @@ public class loockcamera : MonoBehaviour {
     private void Update()
     {
         CameraRotation();
-        if (Input.GetKey(KeyCode.C))
+        if (Input.GetKey(KeyCode.Tab))
         {
             DontLockCursor();
         }
