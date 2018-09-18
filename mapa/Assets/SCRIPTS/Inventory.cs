@@ -36,11 +36,6 @@ public class Inventory : MonoBehaviour
         }
 
     }
-    public void Say()
-    {
-        Debug.Log("hola");
-    }
-
     
     /*
     public void OnApplicationPause(bool pause)

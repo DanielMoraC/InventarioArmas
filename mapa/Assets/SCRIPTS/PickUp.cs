@@ -14,7 +14,7 @@ public class PickUp : MonoBehaviour
 
     public bool pickedUp = false;
 
-    int maximo = 0;
+    public int maximo = 0;
 
 
     // Use this for initialization
@@ -24,6 +24,7 @@ public class PickUp : MonoBehaviour
     }
 
     // Update is called once per frame
+    /*
     void OnTriggerStay(Collider player)
     {
         if (player.tag == "Player")
@@ -41,5 +42,5 @@ public class PickUp : MonoBehaviour
             }
         }
 
-    }
+    }*/
 }

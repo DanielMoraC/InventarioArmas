@@ -45,6 +45,5 @@ public class EquipItem : MonoBehaviour {
         {
             Destroy(icono, 0);
         }
-        //Inventory..Remove(itemIcon);
     }
 }

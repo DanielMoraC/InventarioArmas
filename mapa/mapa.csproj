@@ -299,6 +299,8 @@
     <Compile Include="Assets\SCRIPTS\Movimiento.cs" />
     <Compile Include="Assets\SCRIPTS\PickUp.cs" />
     <Compile Include="Assets\SCRIPTS\PickUpPoti.cs" />
+    <Compile Include="Assets\SCRIPTS\PickUpRojo.cs" />
+    <Compile Include="Assets\SCRIPTS\PickUpVerde.cs" />
     <Compile Include="Assets\SCRIPTS\PickUpWeapon.cs" />
     <Compile Include="Assets\SCRIPTS\Stats.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

@@ -23,8 +23,6 @@ public class Bala : MonoBehaviour {
             //Debug.Log("hola");
         }
 
-        
-
     }
 
     

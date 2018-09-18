@@ -9,10 +9,19 @@ public class Matar : MonoBehaviour {
     EquipItem Eq;
 
     public GameObject Zombie;
+    public GameObject Bala;
 
-	// Use this for initialization
-	void Start () {
+    PickUpVerde guanteverde;
+
+    public int daño;
+    public int dañozombie;
+    public int dañomomia;
+    public int dañovampiro;
+
+    // Use this for initialization
+    void Start () {
         Estadisticas = GameObject.FindWithTag("GameController").GetComponent<Stats>();
+        guanteverde = GameObject.FindWithTag("GameController").GetComponent<PickUpVerde>();
     }
 	
 	// Update is called once per frame
@@ -20,15 +29,15 @@ public class Matar : MonoBehaviour {
 
 	}
     
-    private void OnCollisionEnter(Collider colli)
+    private void OnTriggerEnter(Collider other)
     {
-        if (colli.gameObject.tag == "Zombie")
+        if (other.gameObject.tag == "bala")
         {
             Debug.Log("Hola");
-            Destroy(Zombie,0);
+            Destroy(Zombie, 0);
         }
-        
-    }/*
+    }
+    /*
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Zombie")
