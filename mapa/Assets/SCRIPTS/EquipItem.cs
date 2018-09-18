@@ -36,7 +36,15 @@ public class EquipItem : MonoBehaviour {
     }
     public void RemoveButton()
     {
+        if (Equipado)
+        {
+            icono.transform.SetParent(invequip.invItems.transform);
+            Equipado = false;
+        }
+        else if (!Equipado)
+        {
+            Destroy(icono, 0);
+        }
         //Inventory..Remove(itemIcon);
-        Destroy(icono, 0);
     }
 }

@@ -290,14 +290,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
+    <Compile Include="Assets\SCRIPTS\Bala.cs" />
+    <Compile Include="Assets\SCRIPTS\Disparar.cs" />
     <Compile Include="Assets\SCRIPTS\EquipItem.cs" />
     <Compile Include="Assets\SCRIPTS\Inventory.cs" />
     <Compile Include="Assets\SCRIPTS\loockcamera.cs" />
+    <Compile Include="Assets\SCRIPTS\Matar.cs" />
     <Compile Include="Assets\SCRIPTS\Movimiento.cs" />
     <Compile Include="Assets\SCRIPTS\PickUp.cs" />
     <Compile Include="Assets\SCRIPTS\PickUpPoti.cs" />
     <Compile Include="Assets\SCRIPTS\PickUpWeapon.cs" />
-    <Compile Include="Assets\SCRIPTS\SePuede.cs" />
+    <Compile Include="Assets\SCRIPTS\Stats.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
