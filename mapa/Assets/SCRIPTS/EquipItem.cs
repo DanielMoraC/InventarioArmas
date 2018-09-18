@@ -13,16 +13,21 @@ public class EquipItem : MonoBehaviour {
 
     Inventory invequip;
 
-    
+    //private bool Verde;
+
+    //public GameObject[] Guantes;
+
+
 
     // Use this for initialization
     void Start () {
         invequip= GameObject.FindWithTag("GameController").GetComponent<Inventory>();
+        //Guantes = GameObject.FindGameObjectsWithTag("item");
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
+        
 	}
 
     public void Equip()
@@ -46,4 +51,14 @@ public class EquipItem : MonoBehaviour {
             Destroy(icono, 0);
         }
     }
+    public void Stats()
+    {/*
+        if (Verde)
+        {
+            icono.transform.SetParent(invequip.invItems.transform);
+            Equipado = false;
+        }*/
+        
+    }
+
 }

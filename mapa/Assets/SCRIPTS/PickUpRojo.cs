@@ -17,7 +17,10 @@ public class PickUpRojo : MonoBehaviour
 
     public bool pickedUp = false;
 
-
+    public int damage = 100;
+    public int damageM = 150;
+    public int damageV = 100;
+    public int damageZ = 100;
 
     // Use this for initialization
     void Start()
@@ -44,6 +47,7 @@ public class PickUpRojo : MonoBehaviour
                     i.transform.SetParent(invScript.invItems.transform);
                     Destroy(gameObject);
                     tope.maximo++;
+                    Debug.Log("Coger Rojo");
                 }
 
             }

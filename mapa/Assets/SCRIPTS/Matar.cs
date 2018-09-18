@@ -13,10 +13,10 @@ public class Matar : MonoBehaviour {
 
     PickUpVerde guanteverde;
 
-    public int daño;
-    public int dañozombie;
-    public int dañomomia;
-    public int dañovampiro;
+    public int dano;
+    public int danozombie;
+    public int danomomia;
+    public int danovampiro;
 
     // Use this for initialization
     void Start () {
@@ -31,7 +31,7 @@ public class Matar : MonoBehaviour {
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "bala")
+        if (other.gameObject.tag == "Zombie")
         {
             Debug.Log("Hola");
             Destroy(Zombie, 0);

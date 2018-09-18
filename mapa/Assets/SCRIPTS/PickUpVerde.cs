@@ -17,7 +17,10 @@ public class PickUpVerde : MonoBehaviour
 
     public bool pickedUp = false;
 
-
+    public int damage = 100;
+    public int damageM = 100;
+    public int damageV = 100;
+    public int damageZ = 150;
 
     // Use this for initialization
     void Start()
@@ -42,7 +45,7 @@ public class PickUpVerde : MonoBehaviour
                 {
                     GameObject i = Instantiate(itemIcon);
                     i.transform.SetParent(invScript.invItems.transform);
-                    Destroy(gameObject);
+                    gameObject.SetActive(false);
                     tope.maximo++;
                 }
 
