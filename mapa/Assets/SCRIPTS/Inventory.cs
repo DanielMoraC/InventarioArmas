@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-
-    public GameObject invItems;
+    //The parent of invItems and invequ
     public GameObject invmenu;
+    //Where the items are stored
+    public GameObject invItems;
+    //Where the item is equiped
     public GameObject invequ;
+
+    //noting really important
     public GameObject potiv;
     public GameObject potivpivote;
     public GameObject potim;
     public GameObject potimpivote;
-
-    public bool a = false;
 
 
     // Use this for initialization
@@ -28,23 +31,20 @@ public class Inventory : MonoBehaviour
         if (Input.GetKey(KeyCode.Tab))
         {
             invmenu.SetActive(true);
-            //Time.timeScale = 0;
         }
         else
         {
             invmenu.SetActive(false);
-            //Time.timeScale = 1;
         }
 
-        //Debug.Log(invequ.GetComponentsInChildren<PropertyName>);
-        //Debug.Log("Objeto equipado nombre: " + invequ.GetComponentInChildren<>); transform.FindChild("nameOfChildObject")
-        Debug.Log(invequ = GetComponentInChildren<name>();
+
+        //I'm testing things but they aren't working
+
+        //Debug.Log("Equipped item name: " + invequ.GetComponentInChildren<>); transform.FindChild("nameOfChildObject")
+        //Debug.Log(invequ = GetComponentInChildren<PropertyName>();
+        //invequ.transform.GetChild();
 
     }
     
-    /*
-    public void OnApplicationPause(bool pause)
-    {
-        
-    }*/
+    
 }
