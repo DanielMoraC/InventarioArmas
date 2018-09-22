@@ -39,6 +39,7 @@ public class Inventory : MonoBehaviour
 
 
         //I'm testing things but they aren't working
+        string Name = invequ.transform.Find("ChildName").gameObject.name;
 
         //Debug.Log("Equipped item name: " + invequ.GetComponentInChildren<>); transform.FindChild("nameOfChildObject")
         //Debug.Log(invequ = GetComponentInChildren<PropertyName>();
