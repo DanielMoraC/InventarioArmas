@@ -44,6 +44,15 @@ public class loockcamera : MonoBehaviour {
         {
             LockCursor();
         }
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            Camera.main.fieldOfView = 15;
+        }
+        else
+        {
+            Camera.main.fieldOfView = 60;
+        }
+
     }
     
 

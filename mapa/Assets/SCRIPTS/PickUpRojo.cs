@@ -47,7 +47,7 @@ public class PickUpRojo : MonoBehaviour
                     i.transform.SetParent(invScript.invItems.transform);
                     Destroy(gameObject);
                     tope.maximo++;
-                    Debug.Log("Coger Rojo");
+                    //Debug.Log("Coger Rojo");
                 }
 
             }
