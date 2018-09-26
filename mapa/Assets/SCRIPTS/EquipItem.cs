@@ -12,6 +12,7 @@ public class EquipItem : MonoBehaviour {
     public GameObject icono;
 
     Inventory invequip;
+    PickUp tope;
 
     //private bool Verde;
 
@@ -22,14 +23,29 @@ public class EquipItem : MonoBehaviour {
     // Use this for initialization
     void Start () {
         invequip= GameObject.FindWithTag("GameController").GetComponent<Inventory>();
-        //Guantes = GameObject.FindGameObjectsWithTag("item");
+        tope = GameObject.FindWithTag("GameController").GetComponent<PickUp>();
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-        
+        /*if (Pasado)
+        {
+            GetComponent<Button>().onClick.AddListener(() => Equip());
+        }*/
 	}
 
+    public void Pasar()
+    {
+        if (Equipado && tope.maximo < 15)
+        {
+            icono.transform.SetParent(invequip.invItems.transform);
+            //Pasado = true;
+            Equipado = false;
+            //GetComponent<Button>().onClick.AddListener(Equip);
+        }
+
+    }
     public void Equip()
     {
         if (!Equipado)

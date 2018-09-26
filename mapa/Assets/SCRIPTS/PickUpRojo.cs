@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PickUpRojo : MonoBehaviour
 {
-
     Inventory invScript;
     PickUp tope;
     EquipItem a;

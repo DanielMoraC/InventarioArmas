@@ -9,6 +9,8 @@ TagManager:
   - Zombie
   - Vampiro
   - bala
+  - Moneda20
+  - Moneda10
   layers:
   - Default
   - TransparentFX
