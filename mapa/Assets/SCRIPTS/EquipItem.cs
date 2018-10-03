@@ -10,6 +10,7 @@ public class EquipItem : MonoBehaviour {
     public Button X;
     public Button Obj;
     public GameObject icono;
+    public GameObject iconoCofre;
 
     Inventory invequip;
     PickUp tope;
@@ -34,12 +35,26 @@ public class EquipItem : MonoBehaviour {
             GetComponent<Button>().onClick.AddListener(() => Equip());
         }*/
 	}
-
+    /*
     public void Pasar()
     {
         if (Equipado && tope.maximo < 15)
         {
             icono.transform.SetParent(invequip.invItems.transform);
+            //Pasado = true;
+            Equipado = false;
+            //GetComponent<Button>().onClick.AddListener(Equip);
+        }
+
+    }*/
+    public void Pasar()
+    {
+        if (tope.maximo < 15)
+        {
+            icono.SetActive(true);
+            icono.transform.SetParent(invequip.invItems.transform);            
+            Destroy(iconoCofre, 0);
+            //iconoCofre.SetActive(false);
             //Pasado = true;
             Equipado = false;
             //GetComponent<Button>().onClick.AddListener(Equip);
@@ -65,6 +80,7 @@ public class EquipItem : MonoBehaviour {
         else if (!Equipado)
         {
             Destroy(icono, 0);
+            //DestroyImmediate(icono, true);
         }
     }
     public void Stats()

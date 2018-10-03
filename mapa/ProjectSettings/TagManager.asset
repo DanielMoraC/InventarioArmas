@@ -12,6 +12,7 @@ TagManager:
   - Moneda20
   - Moneda10
   - Pistolero
+  - pared
   layers:
   - Default
   - TransparentFX

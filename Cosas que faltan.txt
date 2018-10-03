@@ -1,0 +1,3 @@
+que el brazo suba y baje con la camara
+que detecte el objeto equipado para sacar stats
+que haya una tienda funcional
