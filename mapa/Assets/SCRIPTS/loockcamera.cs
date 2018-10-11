@@ -36,7 +36,7 @@ public class loockcamera : MonoBehaviour {
     private void Update()
     {
         CameraRotation();
-        if (Input.GetKey(KeyCode.Tab) || Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.Tab) || Cofre.openeded)
         {
             DontLockCursor();
         }

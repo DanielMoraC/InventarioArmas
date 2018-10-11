@@ -27,7 +27,7 @@ public class PickUpWeapon : MonoBehaviour {
     {
         if (player.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.E) && !pickedUp && maximo < 15)
+            if (Input.GetKeyDown(KeyCode.F) && !pickedUp && maximo < 15)
             {
                 if (item)
                 {

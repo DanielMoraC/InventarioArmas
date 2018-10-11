@@ -242,6 +242,7 @@
     <Compile Include="Assets\SCRIPTS\Bala.cs" />
     <Compile Include="Assets\SCRIPTS\Cofre.cs" />
     <Compile Include="Assets\SCRIPTS\DestroyBala.cs" />
+    <Compile Include="Assets\SCRIPTS\DestroyCube.cs" />
     <Compile Include="Assets\SCRIPTS\Disparar.cs" />
     <Compile Include="Assets\SCRIPTS\Ebala.cs" />
     <Compile Include="Assets\SCRIPTS\Edisparar.cs" />
@@ -260,6 +261,7 @@
     <Compile Include="Assets\SCRIPTS\PickUpWeapon.cs" />
     <Compile Include="Assets\SCRIPTS\SelecciondeStats.cs" />
     <Compile Include="Assets\SCRIPTS\Stats.cs" />
+    <Compile Include="Assets\SCRIPTS\Teletransport.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

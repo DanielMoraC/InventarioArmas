@@ -8,6 +8,8 @@ public class Cofre : MonoBehaviour {
     Inventory invScript;
     PickUp tope;
 
+    static public bool openeded = false;
+
     public bool pickedUp = false;
 
     public GameObject Objetos;
@@ -29,28 +31,22 @@ public class Cofre : MonoBehaviour {
     {
         if (player.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.F))
             {
                 invScript.invmenu.SetActive(true);
                 Objetos.SetActive(true);
-                //DontLockCursor();
+                openeded = true;
             }
             else
             {
                 invScript.invmenu.SetActive(false);
                 Objetos.SetActive(false);
-                //LockCursor();
+                openeded = false;
+                
             }
             
         }
 
     }
-    private void DontLockCursor()
-    {
-        Cursor.lockState = CursorLockMode.None;
-    }
-    private void LockCursor()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+
 }

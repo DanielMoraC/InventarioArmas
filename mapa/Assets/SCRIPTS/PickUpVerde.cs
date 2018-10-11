@@ -39,7 +39,7 @@ public class PickUpVerde : MonoBehaviour
     {
         if (player.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.E) && !pickedUp && tope.maximo <15)
+            if (Input.GetKeyDown(KeyCode.F) && !pickedUp && tope.maximo <15)
             {
                 if (item)
                 {

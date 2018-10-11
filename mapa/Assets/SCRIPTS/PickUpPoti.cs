@@ -29,7 +29,7 @@ public class PickUpPoti : MonoBehaviour {
     {
         if (player.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.E) && !pickedUp && stack == 0)
+            if (Input.GetKeyDown(KeyCode.F) && !pickedUp && stack == 0)
             {
                 if (item)
                 {
@@ -40,7 +40,7 @@ public class PickUpPoti : MonoBehaviour {
                 }
 
             }
-            else if (Input.GetKeyDown(KeyCode.E) && !pickedUp && stack > 1)
+            else if (Input.GetKeyDown(KeyCode.F) && !pickedUp && stack > 1)
             {
                 if (item)
                 {
